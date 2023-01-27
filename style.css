@@ -1,0 +1,237 @@
+/* ESTRUTURA */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    padding: 0 20px;
+}
+
+:root{
+    --border: #A0AEC0;
+    --text-header: #797C81;
+    --text-products: #595B5F;
+    --black: #000000;
+    --white: #FFFFFF;
+    --background-element: #E2E8F0;
+    --erase-button: #E53E3E;
+    --save-button: #38A169;
+    --hover: #B8D6FF;
+}
+
+
+
+#background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+/* CABEÇALHO */
+
+#info-pick-header{
+    max-width: 1224px;
+    margin-bottom: 4%;
+}
+
+#info-pick-header h1{
+    width: 156px;
+    height: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--black);
+}
+
+#info-pick-header hr{
+    width: 100%;
+    border: 1px solid var(--border);
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+/* INFORMAÇÕES DO NOVO CADASTRO */
+
+#info-pick-body{
+    max-width: 1224px;
+    height: 253px;
+    background: var(--white);
+    border: 1px solid #A0AEC0;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 2%;
+}
+
+#info-pick-body td{
+    width: 20%;
+    padding:0 1% 0 1%;
+}
+
+.info-label{
+    display: block;
+    width: 100%;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--black);
+    margin-bottom: 1%;
+}
+
+.info-input{
+    width: 100%;
+    height: 35px;
+    background: var(--background-element);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px;
+    display: block;
+}
+
+.info-input:hover{
+    background-color: var(--white);
+}
+
+.info-input:active{
+    border-color: blue;
+}
+
+.button{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--white);
+    float: right;
+    margin: 20px 0 0 10px;
+}
+
+.button:hover{
+    transform: scale(1.12);
+}
+
+#button-erase{
+    width: 138px;
+    height: 34px;
+    background: var(--erase-button);
+    border-radius: 6px;
+    border:none;
+}
+
+#button-save{
+    width: 79px;
+    height: 34px;
+    background: var(--save-button);
+    border-radius: 6px;
+    border:none;
+}
+
+
+
+/* PRODUTOS CADASTRADOS */
+#info-show{
+    max-width: 1224px;
+    height: 100%;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+/* header */
+#info-show-header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid var(--border);
+    padding: 2% 3%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color:var(--text-header);
+    align-items: center;
+}
+
+.icons{
+    float: right;
+    margin-left: 5px;
+}
+
+/* body */
+#info-show-body{
+    max-width: 1224px;
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    min-height: 451px;
+}
+
+#info-show-element{
+    width: 100%;
+    height: 100%;
+}
+
+.data-container{
+    max-width: 1160px;
+    height: 78px;
+    background: var(--background-element);
+    border-radius: 6px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 7px 9px;
+    margin: 10px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-products);
+}
+
+.data-container td{
+    margin: 0 5px;
+}
+
+.data-container:hover{
+    background-color: var(--hover);
+}
+
+
+.img-products{
+    width: 64px;
+    height: 64px;
+}
+
+.img-products img{
+    width: 100%;
+    height: 100%;
+}
+
+.trash-svg{
+    float: right;
+    margin-right: 10px;
+}
+
+.trash-svg:hover{
+    transform: scale(1.15);
+}
+
+.esgotado{
+    color: red;
+}
